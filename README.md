@@ -36,7 +36,6 @@ the software requirements are:
 
 For the installation of the Chombo library, refer to the userguide pages 123-126
 
-=====================================================================================
 
 Set environment variables
 -------------------------
@@ -47,16 +46,19 @@ Depending on your shell (e.g. tcsh or bash) use either one of
      ~/MyWorkDir> setenv PLUTO_DIR /home/user/PLUTO # If you’re using the tcsh shell;
 
 
-=====================================================================================
 BENCHMARK SHOCK_CLOUD (BENCH_TESTS/SHOCK_CLOUD)
+-----------------------------------------------
 
 1) Change directory to test problem SHOCK_CLOUD under BENCHMARK/BENCH_TESTS
 
+```
      ~/MyWorkDir> cd BENCHMARK/BENCH_TESTS/SHOCK_CLOUD
+```
 
 2) Run the Python script using
-
+```
      ~/MyWorkDir> python $PLUTO_DIR/setup.py
+```
 
    select “Change makefile”, choose a suitable makefile (e.g.
    Linux.mpicc.defs) and press enter.
@@ -113,20 +115,22 @@ BENCHMARK SHOCK_CLOUD (BENCH_TESTS/SHOCK_CLOUD)
       X3-grid    1    0.0    1024    u    1.0
 
 
-=====================================================================================
 BENCHMARK SN_EXPLOSION (BENCH_TESTS/SN_EXPLOSION)
+-------------------------------------------------
 
 In this setup, the initial conditions are stored in external files
 under the subdirectories EXT and CSM. The files in these directories
 are read, and the data are interpolated in the numerical grid.
 
 1) Change directory to test problem SN_EXPLOSION under BENCHMARK/BENCH_TESTS
-
+```
      ~/MyWorkDir> cd BENCHMARK/BENCH_TESTS/SN_EXPLOSION
+```
 
 2) Run the Python script using
-
+```
      ~/MyWorkDir> python $PLUTO_DIR/setup.py
+```
 
    select “Change makefile”, choose a suitable makefile (e.g.
    Linux.mpicc.defs) and press enter.
@@ -183,8 +187,8 @@ are read, and the data are interpolated in the numerical grid.
       X2-grid    1    0.0    1024    u    1.0
       X3-grid    1    0.0    1024    u    1.0
 
-=====================================================================================
 BENCHMARK PWN (BENCH_TESTS/PWN_AMR)
+-----------------------------------
 
 The steps to run the setup are basically the same illistrated before.
 A summary is provided below
